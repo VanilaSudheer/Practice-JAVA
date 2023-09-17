@@ -5,8 +5,7 @@ import java.util.List;
 
 public class MinMax {
     List<Integer> list = Arrays.asList(1,2,5,6,3,4,8,21,11,4);
-    long min = 0;
-    long max = 0;
+    long min = 0, max = 0;
     int size = list.size()-1;
     public void result(){
         Collections.sort(list);

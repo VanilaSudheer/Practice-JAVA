@@ -3,6 +3,8 @@ public class Main {
 
         PlusMinus plusMinus = new PlusMinus();
         plusMinus.result();
+        MinMax minMax = new MinMax();
+        minMax.result();
 
 
     }

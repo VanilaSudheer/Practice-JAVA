@@ -7,6 +7,8 @@ public class Main {
         minMax.result();
         TimeConversion timeConversion = new TimeConversion();
         timeConversion.result();
+        SparseArrays sparseArrays = new SparseArrays();
+        sparseArrays.result();
 
 
     }

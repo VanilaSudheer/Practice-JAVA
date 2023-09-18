@@ -11,7 +11,9 @@ public class Main {
         sparseArrays.result();
         LonelyInteger lonelyInteger = new LonelyInteger();
         lonelyInteger.result();
-        
+        FlippingBits flippingBits = new FlippingBits();
+        flippingBits.result();
+
 
     }
 }

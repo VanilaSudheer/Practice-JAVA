@@ -9,6 +9,9 @@ public class Main {
         timeConversion.result();
         SparseArrays sparseArrays = new SparseArrays();
         sparseArrays.result();
+        LonelyInteger lonelyInteger = new LonelyInteger();
+        lonelyInteger.result();
+        lonelyInteger.result2();
 
 
     }

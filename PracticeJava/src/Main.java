@@ -15,6 +15,8 @@ public class Main {
         flippingBits.result();
         DiagonalDifference diagonalDifference =new DiagonalDifference();
         diagonalDifference.result();
+        CountingSort countingSort = new CountingSort();
+        countingSort.result();
 
 
     }

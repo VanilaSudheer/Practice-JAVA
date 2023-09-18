@@ -11,8 +11,7 @@ public class Main {
         sparseArrays.result();
         LonelyInteger lonelyInteger = new LonelyInteger();
         lonelyInteger.result();
-        lonelyInteger.result2();
-
+        
 
     }
 }

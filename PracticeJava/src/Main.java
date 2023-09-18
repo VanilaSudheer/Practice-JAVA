@@ -13,6 +13,8 @@ public class Main {
         lonelyInteger.result();
         FlippingBits flippingBits = new FlippingBits();
         flippingBits.result();
+        DiagonalDifference diagonalDifference =new DiagonalDifference();
+        diagonalDifference.result();
 
 
     }

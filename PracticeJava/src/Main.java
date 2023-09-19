@@ -21,6 +21,8 @@ public class Main {
         pangrams.result2();
         PermutingTwoArrays permuting = new PermutingTwoArrays();
         permuting.result();
+        SubArrayDivision subArrayDiv= new SubArrayDivision();
+        subArrayDiv.result();
 
 
     }

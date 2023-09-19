@@ -17,6 +17,8 @@ public class Main {
         diagonalDifference.result();
         CountingSort countingSort = new CountingSort();
         countingSort.result();
+        Pangrams pangrams = new Pangrams();
+        pangrams.result2();
 
 
     }

@@ -19,6 +19,8 @@ public class Main {
         countingSort.result();
         Pangrams pangrams = new Pangrams();
         pangrams.result2();
+        PermutingTwoArrays permuting = new PermutingTwoArrays();
+        permuting.result();
 
 
     }

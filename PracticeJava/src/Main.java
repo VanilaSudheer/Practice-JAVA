@@ -25,6 +25,8 @@ public class Main {
         subArrayDiv.result();
         FlippingMatrix flippingMatrix =new FlippingMatrix();
         flippingMatrix.result();
+        SalesByMatch salesByMatch = new SalesByMatch();
+        salesByMatch.result();
 
 
     }

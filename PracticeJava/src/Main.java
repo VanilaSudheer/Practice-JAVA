@@ -23,6 +23,8 @@ public class Main {
         permuting.result();
         SubArrayDivision subArrayDiv= new SubArrayDivision();
         subArrayDiv.result();
+        FlippingMatrix flippingMatrix =new FlippingMatrix();
+        flippingMatrix.result();
 
 
     }

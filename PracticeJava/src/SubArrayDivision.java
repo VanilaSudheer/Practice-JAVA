@@ -9,7 +9,7 @@ public class SubArrayDivision {
     int m = 2;
     //sum of all elements in sub array is d
     int d = 4;
-    
+
     public void result(){
         List<List<Integer>> output = new ArrayList<>();
         int sum = 0;

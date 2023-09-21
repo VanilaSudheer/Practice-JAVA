@@ -27,6 +27,28 @@ public class FlippingMatrix {
 
         }
     }
+    public int maxSum(){
+        int n =matrix.size();
+        int sum =0;
+        int q1,q2,q3,q4;
+
+        List<Integer> rowUpper;
+        List<Integer> rowBot;
+        for (int i = 0; i< n/2 ;i++){
+
+            rowUpper = matrix.get(i);
+            rowBot = matrix.get(n-i-1);
+            for (int j=0;j<n/2;j++){
+                q1 = rowUpper.get(n-i-1);
+                q2 = rowUpper.get(j);
+                q3 = rowBot.get(j);
+                q4 = rowBot.get(n-j-1);
+
+                sum += Math.max(Math.max(q1,q2),Math.max(q3,q4));
+            }
+        }
+        return sum;
+    }
     public void flipRow(int r){
         List<Integer> row = new ArrayList<>(matrix.get(r));
         int n = row.size();
@@ -122,5 +144,6 @@ public class FlippingMatrix {
 
         System.out.println("****************");
         printMatrix();
+        System.out.println(maxSum());
     }
 }

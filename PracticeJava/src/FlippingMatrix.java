@@ -1,15 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class FlippingMatrix {
     List<List<Integer>> matrix =new ArrayList<>();
     public  void randomMatrix (int m,int n){
+        Random random =new Random();
 
         for (int i=0; i<m; i++){
             matrix.add(new ArrayList<>());
             for (int j=0; j<n; j++){
-                matrix.get(i).add((int) (Math.random()*25));
+                int randomValue = random.nextInt(25);
+                matrix.get(i).add(randomValue);
             }
+
         }
 
     }
@@ -26,12 +30,13 @@ public class FlippingMatrix {
     public void flipRow(int r){
         List<Integer> row = new ArrayList<>(matrix.get(r));
         int n = row.size();
-        for (int i =
-             0; i <n/2; i++ ){
-
-            matrix.get(r).set(i,row.get(n-i-1));
-            matrix.get(r).set(n-i-1,row.get(i));
+        for (int i = 0; i <n/2; i++ ){
+            int temp = row.get(i);
+            row.set(i,row.get(n-i-1));
+            row.set(n-i-1,temp);
         }
+        matrix.set(r,row);
+
     }
     public void flipCol(int c){
         List<Integer> col = new ArrayList<>();

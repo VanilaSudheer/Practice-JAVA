@@ -27,6 +27,8 @@ public class Main {
         flippingMatrix.result();
         SalesByMatch salesByMatch = new SalesByMatch();
         salesByMatch.result();
+        ZigZagArray zigZagArray = new ZigZagArray();
+        zigZagArray.result();
 
 
     }

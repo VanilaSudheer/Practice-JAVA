@@ -29,6 +29,8 @@ public class Main {
         salesByMatch.result();
         ZigZagArray zigZagArray = new ZigZagArray();
         zigZagArray.result();
+        BookPages bookPages = new BookPages();
+        bookPages.result();
 
 
     }

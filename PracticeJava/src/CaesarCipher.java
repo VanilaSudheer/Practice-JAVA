@@ -1,7 +1,7 @@
 public class CaesarCipher {
     String original ="abcd efg -123- hijk to 'xyz'";
     int k = 5;
-    int base;
+    char base;
     String output = "";
     StringBuilder res = new StringBuilder();
 

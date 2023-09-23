@@ -33,6 +33,8 @@ public class Main {
         bookPages.result();
         CaesarCipher caesarCipher = new CaesarCipher();
         caesarCipher.result();
+        MinimumUnfairness minimumUnfairness = new MinimumUnfairness();
+        minimumUnfairness.result();
 
 
     }

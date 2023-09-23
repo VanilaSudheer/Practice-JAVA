@@ -17,7 +17,7 @@ public class MinimumUnfairness {
                 index = i;
             }
         }
-        System.out.println(arr.subList(index,index+k));
+        System.out.println(arr.subList(index,index+k)+"***");
         System.out.println(minFairness);
     }
 

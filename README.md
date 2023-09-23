@@ -1,2 +1,2 @@
 # Practice-JAVA
-HackerRank preparation
+core Java preparation

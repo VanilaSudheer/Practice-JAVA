@@ -35,6 +35,8 @@ public class Main {
         caesarCipher.result();
         MinimumUnfairness minimumUnfairness = new MinimumUnfairness();
         minimumUnfairness.result();
+        AlphabiticalList alphabiticalList = new AlphabiticalList();
+        alphabiticalList.result();
 
 
     }

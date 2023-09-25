@@ -7,7 +7,6 @@ public class SymmetricByWeight {
     int total = arr.stream().mapToInt(Integer::intValue).sum();
     public void result(){
         if(n==0 || n==1) System.out.println("Yes");
-
         int left = 0;
         int right = total-arr.get(0);
         if(left == right) System.out.println("Yes");
@@ -18,6 +17,7 @@ public class SymmetricByWeight {
             if(left == right) System.out.println("Yes");
             else if(right < left) System.out.println("No");
         }
+        System.out.println("No");
 
 
     }

@@ -37,6 +37,8 @@ public class Main {
         minimumUnfairness.result();
         AlphabiticalList alphabiticalList = new AlphabiticalList();
         alphabiticalList.result();
+        SymmetricByWeight symmetric = new SymmetricByWeight();
+        symmetric.result();
 
 
     }

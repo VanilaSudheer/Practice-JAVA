@@ -41,6 +41,8 @@ public class Main {
         symmetric.result();
         LuckyNumber luckyNumber = new LuckyNumber();
         luckyNumber.result();
+        Anagram anagram = new Anagram();
+        anagram.result();
 
 
     }

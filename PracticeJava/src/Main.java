@@ -39,6 +39,8 @@ public class Main {
         alphabiticalList.result();
         SymmetricByWeight symmetric = new SymmetricByWeight();
         symmetric.result();
+        LuckyNumber luckyNumber = new LuckyNumber();
+        luckyNumber.result();
 
 
     }

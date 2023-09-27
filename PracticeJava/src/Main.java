@@ -45,6 +45,8 @@ public class Main {
         anagram.result();
         LCMandGCD lcMandGCD = new LCMandGCD();
         lcMandGCD.result();
+        Palindrom palindrom = new Palindrom();
+        palindrom.result();
 
 
     }

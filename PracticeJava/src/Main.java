@@ -43,6 +43,8 @@ public class Main {
         luckyNumber.result();
         Anagram anagram = new Anagram();
         anagram.result();
+        LCMandGCD lcMandGCD = new LCMandGCD();
+        lcMandGCD.result();
 
 
     }

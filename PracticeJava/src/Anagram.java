@@ -1,25 +1,35 @@
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Anagram {
-    String s = "abcdefhabcdefg";
+    String s = "xabcdefhabcdefgy";
     public void result(){
         int n = s.length();
+        int res =0;
         String left = s.substring(0,n/2);
         String right = s.substring(n/2);
         if(left.length() != right.length()) System.out.println("No match");
         else{
-            char[] arr1 = left.toCharArray();
-            char[] arr2 = right.toCharArray();
-            Arrays.sort(arr1);
-            Arrays.sort(arr2);
-            if(Arrays.equals(arr1,arr2)) System.out.println("anagram");
-            else {
-                System.out.println("Not an anagram");
-                for (int i =0 ;i< arr1.length;i++){
-                    if(arr1[i] != arr2[i]) System.out.println(arr1[i]);
-                }
+            Set<Character> leftSet = new HashSet<>();
+            Set<Character> rightSet = new HashSet<>();
+
+
+            for(char ch :left.toCharArray()){
+                leftSet.add(ch);
+
             }
+            for(char ch :right.toCharArray()){
+                rightSet.add(ch);
+
+            }
+            Set<Character> unionSet = new HashSet<>(leftSet);
+            unionSet.retainAll(rightSet);
+            int union = unionSet.size();
+            res = n/2 - union;
+            System.out.println(res+"***2****");
+
 
         }
     }

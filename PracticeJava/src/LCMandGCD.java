@@ -11,31 +11,38 @@ public class LCMandGCD {
         int gcd = arr2.get(0);
         for(int i = 1; i < arr2.size() ; i++){
             gcd = findGCD(gcd, arr2.get(i));
+            System.out.println(arr2.get(i) + "***" + gcd);
         }
         return gcd ;
     }
-    public List<Integer> allDivisors(int a){
-        List<Integer> divisors = new ArrayList<>();
+    public Set<Integer> allDivisors(int a){
+        Set<Integer> divisor = new HashSet<>();
         for(int i=1 ;i<=Math.sqrt(a);i++){
             if(a % i == 0){
-                divisors.add(i);
+                divisor.add(i);
                 if(a/i != i){
-                    divisors.add(a/i);
+                    divisor.add(a/i);
                 }
             }
         }
-        return divisors;
+        return divisor;
     }
 
     public void result(){
         int listGCD = findGCDofList();
         System.out.println(listGCD);
-        List<Integer> divisorList = allDivisors(listGCD);
+        Set<Integer> divisorList = allDivisors(listGCD);
         System.out.println(divisorList);
         Set<Integer> set1 = new HashSet<>(arr1);
-        Set<Integer> set2 = new HashSet<>(divisorList);
-        boolean res = set2.containsAll(set1);
+
+        boolean res = divisorList.containsAll(set1);
         System.out.println(res);
+    }
+    public void result2(){
+        int gcd = arr2.get(0);
+        for (int num : arr2){
+            gcd = findGCD(gcd,num);
+            }
 
 
     }

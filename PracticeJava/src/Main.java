@@ -47,6 +47,8 @@ public class Main {
         lcMandGCD.result();
         Palindrom palindrom = new Palindrom();
         palindrom.result();
+        FireWorks fireWorks = new FireWorks();
+        fireWorks.result();
 
 
     }

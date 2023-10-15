@@ -49,6 +49,8 @@ public class Main {
         palindrom.result();
         FireWorks fireWorks = new FireWorks();
         fireWorks.result();
+        GoodQueue goodQueue = new GoodQueue();
+        goodQueue.result();
 
 
     }

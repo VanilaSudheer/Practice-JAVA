@@ -51,6 +51,8 @@ public class Main {
         fireWorks.result();
         GoodQueue goodQueue = new GoodQueue();
         goodQueue.result();
+        ValidString validString = new ValidString();
+        validString.result();
 
 
     }

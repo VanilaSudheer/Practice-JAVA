@@ -55,6 +55,8 @@ public class Main {
         validString.result();
         DenseRanking denseRanking = new DenseRanking();
         denseRanking.result();
+        LinkedList linkedList = new LinkedList();
+        linkedList.result();
 
 
     }

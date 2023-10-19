@@ -57,6 +57,8 @@ public class Main {
         denseRanking.result();
         LinkedList linkedList = new LinkedList();
         linkedList.result();
+        DoublyLinkedListReverse doublyLlist= new DoublyLinkedListReverse();
+        doublyLlist.result();
 
 
     }

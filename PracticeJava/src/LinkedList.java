@@ -56,6 +56,7 @@ public class LinkedList {
             System.out.print(node.data + " ");
             node = node.next;
         }
+        System.out.println();
     }
     public void result(){
 

@@ -53,6 +53,8 @@ public class Main {
         goodQueue.result();
         ValidString validString = new ValidString();
         validString.result();
+        DenseRanking denseRanking = new DenseRanking();
+        denseRanking.result();
 
 
     }

@@ -49,6 +49,23 @@ public class LinkedList {
 
         return prev;
     }
+    public static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode llist, int data, int position) {
+        // Write your code here
+
+        SinglyLinkedListNode currNode = llist;
+        int i=0;
+        while(currNode != null && i<position-1){
+            currNode = currNode.next;
+            i++;
+        }
+        SinglyLinkedListNode newNode = new SinglyLinkedListNode(data);
+        newNode.next = currNode.next;
+        currNode.next = newNode;
+        return llist;
+
+    }
+
+
 
 
     public static void printList(SinglyLinkedListNode node) {
@@ -64,6 +81,8 @@ public class LinkedList {
         llist.insertNode(1);
         llist.insertNode(2);
         llist.insertNode(3);
+        llist.insertNode(5);
+        insertNodeAtPosition(llist.head,4,3);
         printList(llist.head);
 
 
